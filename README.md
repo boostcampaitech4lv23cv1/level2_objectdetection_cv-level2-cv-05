@@ -25,7 +25,7 @@
 
 ## 🛠 Data Preprocessing
 ### 개별 실험 
-- Faster RCNN baseline/ Adam optimizer/ lr 1e-4
+Faster RCNN baseline/ Adam optimizer/ lr 1e-4
 |**Epoch**|**1x**|**2x**|
 |------|---|---|
 |No augmentation|0.422|0.395|
@@ -40,7 +40,7 @@
 - Mosaic과 Mixup은 epcoh을 늘리면 성능향상으로 이어질 수도 있다는 가정 하에 2x로 재실험한 결과 Mosaic은 성능향상을 보여 후보군에 포함, mixup은 최종탈락
 
 ### 조합 실험 
-- Faster RCNN / backbone Resnext / Adam optimizer / lr1e-4
+Faster RCNN / backbone Resnext / Adam optimizer / lr1e-4
 |**Augmentation 조합**|**Best validation mAP 50**|
 |------|---|
 |All|0.512|
@@ -101,5 +101,5 @@ Ensemble (Weighted-Boxes-Fusion를 이용)
 
 ||**Public Score**|**Private Score**|
 |------|---|---|
-|k fold Cascade Swin_Large(weight : 3) + k fold YOLOv7 + Cascade Swin_base|0.7127(2등)|**Private : 0.6983 (최종 2등)**|
-|k fold Cascade Swin_Large(weight : 4) + Cascade Swin_base + UniverseNet + k fold YoloV7 +  YoloV5 + k fold Faster RCNN Resnext|0.7125|0.6981|
+|k fold Cascade Swin_Large(weight: 3) + k fold YOLOv7 + Cascade Swin_base|0.7127(2등)|**0.6983 (최종 2등)**|
+|k fold Cascade Swin_Large(weight: 4) + Cascade Swin_base + UniverseNet + k fold YoloV7 +  YoloV5 + k fold Faster RCNN Resnext|0.7125|0.6981|
